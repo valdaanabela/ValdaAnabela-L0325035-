@@ -1,0 +1,278 @@
+<DOCTYPE html>
+
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Toko Sembako SRC Mekar 212</title>
+  <meta name="description" content="Toko Sembako SRC Mekar 212 - kebutuhan harian, grosir & eceran">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--accent:#a50e4d;--bg:#51c0dc;--muted:#94a3b8}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Arial;color:#e2d9e0;background:linear-gradient(180deg,#071021,#071830);}
+    .container{max-width:1100px;margin:0 auto;padding:0 1rem}/* Header / Nav */
+header{position:sticky;top:0;background:rgba(245, 135, 223, 0.6);backdrop-filter:blur(6px);border-bottom:1px solid rgba(255,255,255,0.03);}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:0.9rem 0}
+.brand{display:flex;gap:.6rem;align-items:center}
+.logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#34d399);display:flex;align-items:center;justify-content:center;font-weight:800}
+nav ul{display:flex;gap:1rem;list-style:none;margin:0;padding:0}
+nav a{color:inherit;text-decoration:none;padding:.4rem .6rem;border-radius:8px}
+nav a:hover{background:rgba(255,255,255,0.02)}
+.cta{background:var(--accent);padding:.45rem .7rem;border- /* Hero */
+.hero{padding:2.5rem 0}
+.hero-grid{display:grid;grid-template-columns:1fr 420px;gap:1.5rem;align-items:center}
+.hero h1{margin:0;font-size:1.8rem}
+.muted{color:var(--muted)}
+
+/* Product grid (CSS Grid) */
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.product{background:rgba(255,255,255,0.02);padding:0.9rem;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+.product img{width:10
+  %;height: 10px;px;object-fit:cover;border-radius:8px}
+.product h4{margin:.5rem 0 0}
+.price{font-weight:700;color:var(--accent)}
+
+/* About & Services */
+.services{display:flex;gap:1rem;flex-wrap:wrap}
+.service{flex:1;min-width:220px;padding:1rem;background:rgba(255,255,255,0.02);border-radius:10px}
+
+/* Contact */
+.contact{display:grid;grid-template-columns:1fr 320px;gap:1rem}
+form{display:flex;flex-direction:column;gap:.6rem}
+input,textarea,select{padding:.6rem;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit}
+button{padding:.6rem;border-radius:8px;border:0;background:var(--accent);color:#91f0f4;font-weight:700}
+
+footer{padding:1.25rem 0;border-top:1px solid rgba(255,255,255,0.03);margin-top:2rem}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem}
+
+/* Responsive */
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr}.products{grid-template-columns:repeat(2,1fr)}.contact{grid-template-columns:1fr}}
+@media (max-width:640px){nav ul{display:none}.hamburger{display:block}.products{grid-template-columns:1fr}.brand span{display:none}}
+
+/* Focus */
+a:focus,button:focus,input:focus{outline:3px solid rgba(14,165,164,0.2);outline-offset:2px}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav" role="navigation" aria-label="Primary">
+      <div class="brand">
+        <div class="logo">SM</div>
+        <div>
+          <div style="font-weight:700">SRC Mekar 212</div>
+          <div class="muted" style="font-size:.82rem">Toko Sembako & Kebutuhan Harian</div>
+        </div>
+      </div><nav>
+    <ul id="menu">
+      <li><a href="#hero">Beranda</a></li>
+      <li><a href="#products">Produk</a></li>
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="#contact">Kontak</a></li>
+    </ul>
+  </nav>
+<div style="display:flex;gap:.6rem;align-items:center">
+    <a class="cta" href="#products">Belanja Sekarang</a>
+    <button class="hamburger" id="toggleMenu" aria-label="Buka menu">☰</button>
+  </div>
+</div>
+
+  </header>  <main class="container">
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="hero-grid">
+        <div>
+          <p class="muted" style="margin:0">Toko Sembako Lokal • SRC Mekar 212</p>
+          <h1>Selamat datang di Toko Sembako SRC Mekar 212</h1>
+          <p class="muted">Menjual beras, minyak, bumbu, kebutuhan rumah tangga, dan layanan pesan-antar area sekitar Mekar.</p>
+          <div style="margin-top:1rem;display:flex;gap:.6rem;flex-wrap:wrap">
+            <a class="cta" href="#products">Lihat Produk</a>
+            <a href="#contact" style="align-self:center;color:var(--accent);text-decoration:underline">Pesan Antar</a>
+          </div><div style="margin-top:1rem;display:flex;gap:.6rem;flex-wrap:wrap">
+        <div style="background:rgba(255,255,255,0.02);padding:.6rem;border-radius:8px;display:flex;gap:.6rem;align-items:center">
+          <div style="width:48px;height:48px;border-radius:8px;background-image:url('https://images.unsplash.com/photo-1542831371-d531d36971e6?q=80&w=400&auto=format&fit=crop&s=bdc2f0a6b7b3b9a8');background-size:cover"></div>
+<div>
+            <div style="font-weight:700">Jam Operasional</div>
+            <div class="muted" style="font-size:.9rem">Setiap hari 07:00 - 21:00</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <aside class="card" aria-label="Preview toko" style="background:transparent;padding:0">
+      <img src="https://img.inews.co.id/media/600/files/inews_new/2021/05/04/toko_kelontong_src.jpg" alt="Toko Sembako" style="width:100%;border-radius:10px;display:block;"/>
+    </aside>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+  <h2>Produk Unggulan</h2>
+  <p class="muted">Beberapa produk yang sering dicari pelanggan kami. (Harga contoh)</p>
+<div class="products" style="margin-top:1rem">
+    <article class="product">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.SFwYFjtmGfIjBiLdZ56y6AHaHW?pid=Api&P=0&h=180" alt="Beras 5kg" width="400" height="400">
+      <h4>Beras 5kg</h4>
+      <div class="muted">Jenis: Medium</div>
+      <div class="price">Rp 65.000</div>
+      <a href="#contact" style="margin-top:.6rem;display:inline-block;text-decoration:underline">Pesan</a>
+    </article>
+
+    <article class="product">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.BycTyD6GF__9j5e1wNWRQQHaEK?pid=Api&P=0&h=180" alt="Minyak Goreng 2L">
+      <h4>Minyak Goreng 2L</h4>
+      <div class="muted">Kemasan botol</div>
+      <div class="price">Rp 28.000</div>
+      <a href="#contact" style="margin-top:.6rem;display:inline-block;text-decoration:underline">Pesan</a>
+    </article>
+<article class="product">
+      <img src="https://media.suara.com/pictures/970x544/2023/09/02/98506-ilustrasi-semangkuk-gula-pasir-freepikjcomp.jpg" alt="Gula Pasir 1kg" width="400" height="200">
+      <h4>Gula Pasir 1kg</h4>
+      <div class="muted">Kualitas sedang</div>
+      <div class="price">Rp 12.500</div>
+      <a href="#contact" style="margin-top:.6rem;display:inline-block;text-decoration:underline">Pesan</a>
+    </article>
+
+    <article class="product">
+      <img src="https://cf.shopee.co.id/file/338e37fc867a88ef99f8c7ed173a590d" alt="Sarden Kaleng" width="400">
+      <h4>Sarden Kaleng</h4>
+      <div class="muted">Berbagai merk</div>
+      <div class="price">Rp 18.000</div>
+      <a href="#contact" style="margin-top:.6rem;display:inline-block;text-decoration:underline">Pesan</a>
+    </article>
+
+    <article class="product">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.pfkWSL6zasWFCrTuyoOw9wHaE8?pid=Api&P=0&h=180" alt="Kopi 250gr">
+      <h4>Kopi 250gr</h4>
+      <div class="muted">Bubuk / Kapal Api</div>
+ <div class="price">Rp 22.000</div>
+      <a href="#contact" style="margin-top:.6rem;display:inline-block;text-decoration:underline">Pesan</a>
+    </article>
+
+    <article class="product">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.KJIkW8NHRagNShLzHq7n0QHaE3?pid=Api&P=0&h=180" alt="Bumbu Dapur">
+      <h4>Set Bumbu Dapur</h4>
+      <div class="muted">Paket lengkap</div>
+      <div class="price">Rp 15.000</div>
+      <a href="#contact" style="margin-top:.6rem;display:inline-block;text-decoration:underline">Pesan</a>
+    </article>
+  </div>
+</section>
+
+<!-- ABOUT / SERVICES -->
+<section id="about">
+  <h2>Tentang SRC Mekar 212</h2>
+  <p class="muted">SRC Mekar 212 merupakan toko sembako keluarga yang melayani area sekitar Mekar. Kami menyediakan produk grosir dan eceran dengan harga terjangkau.</p>
+ <div class="services" style="margin-top:1rem">
+    <div class="service">
+      <h3>Layanan Pesan-Antar</h3>
+      <p class="muted">Pesan via telepon atau WhatsApp, kami antar ke alamat di area Mekar (minimal order berlaku).</p>
+    </div>
+    <div class="service">
+      <h3>Grosir & Eceran</h3>
+      <p class="muted">Melayani pembelian grosir untuk warung / kios, harga khusus untuk pembelian banyak.</p>
+    </div>
+    <div class="service">
+      <h3>Jam Operasional</h3>
+      <p class="muted">Setiap hari 07:00 - 21:00</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Kontak & Pemesanan</h2>
+  <p class="muted">Isi form di bawah atau hubungi via WhatsApp untuk pemesanan cepat.</p>
+
+  <div class="contact" style="margin-top:1rem">
+    <div>
+ <form id="orderForm" onsubmit="handleOrder(event)">
+        <label for="name">Nama</label>
+        <input id="name" name="name" required placeholder="Nama Anda">
+
+        <label for="item">Produk</label>
+        <select id="item" name="item">
+          <option>Beras 5kg</option>
+          <option>Minyak Goreng 2L</option>
+          <option>Gula Pasir 1kg</option>
+          <option>Sarden Kaleng</option>
+        </select>
+
+        <label for="qty">Jumlah</label>
+        <input id="qty" name="qty" type="number" min="1" value="1">
+
+        <label for="address">Alamat (untuk antar)</label>
+        <textarea id="address" name="address" rows="3" placeholder="Alamat lengkap jika ingin diantar"></textarea>
+
+        <button type="submit">Kirim Pesanan</button>
+      </form>
+<div style="margin-top:.8rem" class="muted">
+        <div><strong>Telepon / WA: 08798764476</strong> 0812-XXXX-XXXX</div>
+        <div><strong>Alamat: Kebumen</strong> Jl. Mekar No.212, Mekar Sari</div>
+      </div>
+    </div>
+
+    <aside style="background:rgba(255,255,255,0.02);padding:1rem;border-radius:10px">
+      <h3>Informasi</h3>
+      <p class="muted">Minimal order untuk antar: Rp 30.000. Pembayaran tunai / transfer bank.</p>
+      <div style="margin-top:.6rem">
+        <a href="https://wa.me/62812xxxxxxxx" style="text-decoration:none" class="cta">Chat via WhatsApp</a>
+      </div>
+    </aside>
+  </div>
+</section>
+
+  </main>  <footer>
+    <div class="container footer-inner">
+      <div>© <strong>SRC Mekar 212</strong> • Toko Sembako</div>
+      <div class="muted">Dibuat untuk Final Project Frontend</div>
+    </div>
+  </footer>  <script>
+ </footer>  <script>
+    // Simple JS: toggle mobile menu & fake order handler
+    document.getElementById('toggleMenu').addEventListener('click', ()=>{
+      const menu = document.getElementById('menu');
+      if(menu.style.display === 'flex') menu.style.display = '';
+      else menu.style.display = 'flex';
+    });
+
+    function handleOrder(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const item = document.getElementById('item').value;
+      const qty = document.getElementById('qty').value;
+      alert(Terima kasih ${name}! Pesanan ${qty} x ${item} sudah diterima. (Ini demo — hubungi via WA untuk konfirmasi));
+      e.target.reset();
+    }
+  </script><!-- Checkout Page (checkout.html) --><!--
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout - SRC Mekar 212</title>
+<style>
+  body { font-family: Arial, sans-serif; padding:20px; }
+ .box { max-width:400px; margin:auto; padding:20px; border:1px solid #ccc; border-radius:10px; }
+  input, select { width:100%; padding:10px; margin:8px 0; }
+  button { padding:12px; width:100%; }
+</style>
+</head>
+<body>
+<div class="box">
+  <h2>Checkout Pembelian</h2>
+  <label>Nama Pembeli</label>
+  <input type="text">
+  <label>Nomor WA</label>
+  <input type="text">
+  <label>Pilih Produk</label>
+  <select>
+    <option>Beras 5kg - Rp60.000</option>
+    <option>Minyak Goreng - Rp15.000</option>
+  <option>Gula Pasir 1kg - Rp14.000</option>
+  </select>
+  <button>Konfirmasi Pesanan</button>
+</div>
+</body>
+</html>
